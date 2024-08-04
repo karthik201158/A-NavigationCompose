@@ -1,11 +1,8 @@
-package com.karthik.a.navigationcompose.navigation
+package com.karthik.a.nestednavigation.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
-import com.karthik.a.navigationcompose.screens.firstscreen.firstScreenRoute
-import com.karthik.a.navigationcompose.screens.secondscreen.secondScreenRoute
-import com.karthik.a.navigationcompose.screens.thirdscreen.thirdScreenRoute
 
 
 @Composable
