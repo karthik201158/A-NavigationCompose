@@ -1,4 +1,6 @@
 package com.karthik.a.navigationcompose.screens.secondscreen
 
-class SecondScreenViewModel {
+import androidx.lifecycle.ViewModel
+
+class SecondScreenViewModel : ViewModel() {
 }

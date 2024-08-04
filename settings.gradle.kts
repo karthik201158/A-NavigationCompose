@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "A-NavigationCompose"
 include(":app")
- 
+include(":nestednavigation")
