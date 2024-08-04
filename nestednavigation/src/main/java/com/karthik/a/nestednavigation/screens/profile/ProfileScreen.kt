@@ -32,9 +32,15 @@ fun ProfileScreen(
         }
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = {
-
+              navController.popBackStack()
         }) {
-            Text("Go to second screen")
+            Text("Previous Screen")
+        }
+        Spacer(modifier = Modifier.height(16.dp))
+        Button(onClick = {
+            navController.popBackStack(AuthScreenRoute.Login.route, false)
+        }) {
+            Text("Logout")
         }
     }
 }

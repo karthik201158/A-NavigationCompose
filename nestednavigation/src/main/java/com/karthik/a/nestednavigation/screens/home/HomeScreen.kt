@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.karthik.a.nestednavigation.navigation.AuthScreenRoute
+import com.karthik.a.nestednavigation.navigation.MainScreenRoute
 
 
 @Composable
@@ -32,7 +33,7 @@ fun HomeScreen(
         }
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = {
-
+           navController.navigate(MainScreenRoute.Profile.route)
         }) {
             Text("Profile Screen")
         }

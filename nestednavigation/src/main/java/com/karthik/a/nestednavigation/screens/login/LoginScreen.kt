@@ -33,7 +33,13 @@ fun LoginScreen(
         }
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = {
-            navController.navigate(MainScreenRoute.Home.route)
+            navController.popBackStack()
+            navController.navigate(MainScreenRoute.Home.route){
+                // Clear the back stack to prevent navigating back to the Login screen
+                popUpTo(AuthScreenRoute.Login.route) {
+                    inclusive = true
+                }
+            }
         }) {
             Text("Login")
         }
