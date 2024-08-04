@@ -1,20 +1,23 @@
-package com.karthik.a.nestednavigation.screens.thirdscreen
+package com.karthik.a.nestednavigation.screens.forgotpassword
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.karthik.a.nestednavigation.navigation.ScreenRoute
+import com.karthik.a.nestednavigation.navigation.AuthScreenRoute
 
 
 @Composable
-fun ThirdScreen(
+fun ForgotPasswordScreen(
     navController: NavController
 ) {
     Column(
@@ -24,13 +27,14 @@ fun ThirdScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Third screen")
+        Column {
+            Text("ForgotPassword screen")
+        }
+        Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = {
-            //false tells that it will remove all expect first screen
-            navController.popBackStack(ScreenRoute.First.route, false)
+
         }) {
-            Text("Go to first screen by clearing second screen instance")
+            Text("Back")
         }
     }
 }
-

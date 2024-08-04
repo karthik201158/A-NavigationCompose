@@ -11,6 +11,9 @@ import com.karthik.a.navigationcompose.screens.thirdscreen.thirdScreenRoute
 @Composable
 fun MyNavGraph(navController: NavHostController) {
     NavHost(navController = navController, startDestination = ScreenRoute.First.route) {
-
+        // First Screen
+        firstScreenRoute(navController = navController)
+        secondScreenRoute(navController = navController)
+        thirdScreenRoute(navController = navController)
     }
 }
